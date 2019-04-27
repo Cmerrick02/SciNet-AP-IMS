@@ -1,0 +1,173 @@
+$whitesmoke: whitesmoke;
+$gainsboro: gainsboro;
+$lightgrey: lightgrey;
+$white: white;
+$black: black;
+$navbarblack: rgb(40,40,40);
+$navbargrey: rgb(70,70,70);
+$navbarlightgrey: rgb(95,95,95);
+$backgroundgrey: rgb(60,60,60);
+$darkgrey: darkgrey;
+
+$footertextbox: rgb(70,70,70);
+$cardbackground: rgb(55,55,55);
+$cardshadow: rgb(25,25,25);
+
+
+mat-sidenav {
+  background-color: $navbarblack;
+}
+
+mat-sidenav-container {
+  height: 89.2vh;
+  width: 100vw;
+}
+
+.mod-button {
+  width: 100%;
+}
+
+.mat-button {
+  min-width: 1%;
+}
+
+/* Sidenav Toggles */
+.navbartoggleContainer {
+  float: right;
+  height: 70vh;
+  overflow: hidden;
+  padding-left: 0px;
+}
+.navbartoggleButton {
+  z-index: 2;
+  top: 40%;
+  height: 50px;
+  background-color: $darkgrey;
+}
+.navbartoggleInnerButton {
+  z-index: 3;
+  float: left;
+  position: absolute;
+  top: 38.5%;
+  height: 50px;
+  background-color: $darkgrey;
+}
+
+/* Sidenav Styles */
+.sidenavMenu {
+  background-color: $navbarblack;
+  margin-left: 5%;
+}
+.sidenavmenuButton {
+  background: #7d7e7d;
+  background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+  background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
+  background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+  color: $lightgrey;
+  margin-right: 5px;
+}
+
+.sidenavuploadButton {
+  width: 100%;
+  background: #7d7e7d;
+  background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+  background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
+  background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+  color: $lightgrey;
+}
+
+.sidenavcontentContainer {
+  height: 100%;
+  border: gainsboro;
+  border-style: inset;
+  overflow-y: scroll;
+  background-color: $navbarlightgrey;
+}
+
+/* canvas styles */
+
+.canvas-wrapper {
+  position: absolute;
+  border: 3px solid #000;
+  background-color: $white;
+  border-color: dimgrey;
+  border-style: groove;
+  margin: 2%;
+  margin-left: 5%;
+  display: none;
+}
+
+/* infobox styles */
+#infoboxform {
+  height: 200px;
+  width: 250px;
+  display: none;
+  position: absolute;
+  z-index: 5;
+  background-color: $navbargrey;
+  border-color: $navbargrey;
+  border-radius: 10%;
+}
+
+.formInput {
+  margin-top: .5%;
+}
+
+.partial-width {
+  width: 75%;
+}
+
+.iconMenuButton {
+  position: absolute;
+  right: 13%;
+  top: 5%;
+}
+
+.statusMenu {
+  position: absolute;
+  top: 100px;
+}
+
+.statusMenuIcon {
+  position: absolute;
+  width: 120%;
+  border-radius: 50%;
+  border-color: darkgrey;
+  border-style: ridge;
+  border-width: 3px;
+}
+
+.statusMenuItem {
+  border-color: dimgrey;
+  border-bottom-style: groove;
+  border-left-style: groove;
+  border-right-style: groove;
+  padding-bottom: 25%;
+}
+
+.statusIcon {
+  width: 25%;
+  margin-top: 5px;
+}
+
+
+.topMenuItem {
+  border-color: dimgrey;
+  border-style: groove;
+  padding-bottom: 25%;
+}
+
+.infoboxFooter {
+  float: bottom;
+}
+
+.toolbar {
+  top: 1vh;
+  left: .5vw;
+  position: absolute;
+  float: left;
+  z-index: 10;
+  background-color: #424242;
+}

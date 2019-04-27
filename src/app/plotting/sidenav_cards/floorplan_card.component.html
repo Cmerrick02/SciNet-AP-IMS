@@ -1,0 +1,29 @@
+<mat-card *ngFor="let element of itemList" class="cardContainer"> <!-- Floorplan Card w/ Grey "No Plotted Devices" icon -->
+
+  <mat-card-content class="cardContent"> <!-- Floorplan image will go here-->
+    <button mat-stroked-button (click)="floorplanClicked($event.target)">
+      <img class="floorplanPreview" id="floorplan-1" src="{{element.url}}" alt="Floorplan Preview">
+    </button>
+  </mat-card-content> <!-- Floorplan image will go here-->
+
+  <mat-card-footer class="cardFooter">
+    <span class="floorplanName">Floorplan Name</span> <!-- Floorplan name goes here -->
+    <img (click)="deleteFp(element.$key)" class="icon" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/trash-circle-red-512.png" alt="Grey Disconnected Icon" matTooltip="Delete Floorplan">
+  </mat-card-footer>
+</mat-card>
+
+<!-- Temporary links to different floorplan status icons
+
+    No Plotted Devices: https://i.imgur.com/2ojng1R.png
+        matTooltip="No Plotted Devices"
+
+    All Devices Okay: https://i.imgur.com/JfxYEz5.png
+        matTooltip="All Devices Okay"
+
+    Attention Needed: https://i.imgur.com/Wz4t724.png
+        matTooltip="Attention Needed"
+
+    Teardown Complete: https://i.imgur.com/BFId2dQ.png
+        matTooltip="Teardown Complete"
+
+-->

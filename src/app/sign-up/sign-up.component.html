@@ -1,0 +1,27 @@
+<div style="text-align:center">
+  <h1>Register</h1>
+</div>
+
+<mat-card-content>
+  <form class="login">
+    <div class="inputcolor">
+    <mat-form-field class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" name="email" #email required>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password" name="password" type="password" #password required>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput placeholder="Password" name="conpassword" type="password" #conpassword required>
+      </mat-form-field>
+    <button id="signup" mat-raised-button color="accent" (click)="auth.signup(email.value, password.value, conpassword.value)">Register</button>
+    <br>
+    <br>
+    <p style="text-align: center; font-size: 16px;">Already have an account? <a routerLink="/login" style="color: aqua; text-decoration: none;">Sign In</a></p>
+  </div>
+  </form>
+
+</mat-card-content>

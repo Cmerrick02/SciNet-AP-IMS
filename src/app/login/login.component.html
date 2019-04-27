@@ -1,0 +1,23 @@
+<div style="text-align:center">
+    <h1>Login</h1>
+</div>
+
+<mat-card-content>
+  <form class="login">
+    <div class="inputcolor">
+    <mat-form-field class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" name="email" #email required>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password" name="password" type="password" #password required>
+    </mat-form-field>
+    <button id="log" mat-raised-button color="accent" (click)="auth.login(email.value, password.value)">Login</button>
+    <!--Need to align buttons-->
+    <br>
+    <br>
+    <p style="text-align: center; font-size: 16px;">Don't have an account? <a routerLink="/signup" style="color: aqua; text-decoration: none;">Sign Up</a></p>
+  </div>
+  </form>
+</mat-card-content>

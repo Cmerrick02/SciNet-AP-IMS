@@ -1,27 +1,39 @@
-# Angularmaterial
+# SciNet AP Inventory Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
+Inventory tracker for network access points for the SciNet Super Computing Conference in Denver, CO.  This inventory tracker tracks over 300 AP's that handle over 6100 clients across the conference via a floor plan that depicts where each access point is.  Technologies used are Angular 7, and Firebase.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You will need node/npm installed
 
-## Code scaffolding
+in src/app/assets create a file called CONFIG.ts and structure it as so
+```
+export default
+{
+    "apiKey": "",
+    "authDomain": "",
+    "databaseURL": "",
+    "projectId": "",
+    "storageBucket": "",
+    "messagingSenderId": ""
+}
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+// fill empty quotes w/ firebase credentials
+```
 
-## Build
+### Installing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+npm install
+```
+```
+ng serve -o
+```
 
-## Running unit tests
+## Authors
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* **Patrick Jadwin** - [PatrickRJadwin](https://github.com/PatrickRJadwin)
+* **Cory Merrick** - [Cmerrick02](https://github.com/Cmerrick02)
+* **Josh McMahan** - [JGMacs](https://github.com/JGMacs)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

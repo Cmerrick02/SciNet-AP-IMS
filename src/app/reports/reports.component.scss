@@ -1,7 +1,21 @@
-$black: black;
 $white: white;
+$background: #424242;
 
 * {
     color: $white;
-    background-color: $black;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+mat-card {
+    width: 90%;
+    background: $white;
+    overflow-x: auto;
+}
+
+.mat-form-field {
+    padding-left: 25px; //Needed for mobile
 }
